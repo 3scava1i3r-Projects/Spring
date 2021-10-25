@@ -7,21 +7,7 @@ import "./App.css";
 function Box() {
   const [ref, api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
   return (
-<<<<<<< HEAD
-    <>
-      <div className="App">
-        <h1>vineet bsdka</h1>
-      </div>
 
-      <Canvas>
-        <pointLight position={[10, 10, 10]} />
-        <mesh>
-          <sphereBufferGeometry />
-          <meshStandardMaterial color="hotpink" />
-        </mesh>
-      </Canvas>
-    </>
-=======
     <mesh
       onClick={() => {
         api.velocity.set(0, 2, 0);
@@ -44,7 +30,6 @@ function Plane() {
       <planeBufferGeometry attach="geometry" args={[100, 100]} />
       <meshLambertMaterial attach="material" color="lightblue" />
     </mesh>
->>>>>>> f121f5f6f2d95117103f45fe360a7f95e0bf4a7a
   );
 }
 
